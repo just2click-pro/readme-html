@@ -174,7 +174,15 @@
               display: none;
             }
           </style>      
-      <h1>Hello, world</h1>
+          <div class="container-fluid main-container">
+            <div id="header">
+              <h1 class="title toc-ignore">
+                Movies on Netflix, Prime, Hulu and Disney+ Analysis
+              </h1>
+              <h4 class="author">Dana Eilam, Sivan Itzhaki, Shiraz Israeli</h4>
+              <h4 class="date">24.6.2021</h4>
+            </div>
+
     </div>
   </foreignObject>
 </svg>
