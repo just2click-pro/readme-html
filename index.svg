@@ -166,7 +166,7 @@
             }
           </style>
 
-        <body>
+      
           <div class="container-fluid main-container">
             <div id="header">
               <h1 class="title toc-ignore">
@@ -575,7 +575,6 @@
             "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
             document.getElementsByTagName("head")[0].appendChild(script) })()
           </script>
-        </body>
     </div>
   </foreignObject>
 </svg>
