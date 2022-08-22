@@ -1,4 +1,4 @@
-<svg fill="none" viewBox="0 0 1180 500" height="500" width="1180" xmlns="http://www.w3.org/2000/svg">
+<svg fill="white" viewBox="0 0 1180 500" height="500" width="1180" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
           <script
@@ -182,6 +182,66 @@
               <h4 class="author">Dana Eilam, Sivan Itzhaki, Shiraz Israeli</h4>
               <h4 class="date">24.6.2021</h4>
             </div>
+            <div id="background-and-goals" class="section level1">
+              <h1>Background and goals</h1>
+              <p>
+                In this project, we wanted to analyze information about some of
+                the best movies on our most familiar platforms, like Netflix,
+                Prime video and more. you can find the data set we used
+                <a
+                  href="https://www.kaggle.com/ruchi798/movies-on-netflix-prime-video-hulu-and-disney"
+                  >here</a
+                >.
+              </p>
+              <p>
+                We wanted to take this everyday subject and thoroughly study it.
+                Our main questions were:
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    Is there a linear correlation between IMDb ratings and
+                    Rotten Tomatoes ratings?
+                  </p>
+                </li>
+                <li><p>Is there a certain distribution to IMDb ratings?</p></li>
+              </ul>
+              <div
+                id="importing-the-data-set-and-tidying"
+                class="section level2"
+              >
+                <h2>Importing the data set and Tidying</h2>
+                <p>
+                  First we will need to import our data set, which is a simple
+                  CSV table. Afterwards we will need to adjust a few things. We
+                  can see some NA values in the table, so let’s remove any
+                  instance of NA values, while keeping the structural integrity
+                  of the table.
+                </p>
+                <pre>
+                  <code
+                    >## ## -- Column specification
+                    -------------------------------------------------------- ##
+                    cols( ## X1 = col_double(), ## ID = col_double(), ## Title =
+                    col_character(), ## Year = col_double(), ## Age =
+                    col_character(), ## IMDb = col_double(), ## `Rotten
+                    Tomatoes` = col_character(), ## Netflix = col_double(), ##
+                    Hulu = col_double(), ## `Prime Video` = col_double(), ##
+                    `Disney+` = col_double(), ## Type = col_double(), ##
+                    Directors = col_character(), ## Genres = col_character(), ##
+                    Country = col_character(), ## Language = col_character(), ##
+                    Runtime = col_double() ## )</code
+                  >
+                </pre>
+                <pre class="r">
+                  <code
+                    ># Deleting any NA value in the table movies &lt;-
+                    na.omit(movies, invert=FALSE) movies &lt;- select(movies,
+                    2:13) view(movies)</code
+                  >
+                </pre>
+              </div>
+            </div>            
       </div>
 
     </div>
