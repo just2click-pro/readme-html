@@ -92,12 +92,6 @@
               white-space: pre;
             }
           </style>
-          <script type="text/javascript">
-            if (window.hljs) { hljs.configure({ languages: [] })
-            hljs.initHighlightingOnLoad() if (document.readyState &&
-            document.readyState === "complete") { window.setTimeout(function ()
-            { hljs.initHighlighting() }, 0) } }
-          </script>
 
           <style type="text/css">
             .main-container {
